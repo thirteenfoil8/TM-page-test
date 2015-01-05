@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     </head>
     <body>
@@ -67,8 +69,6 @@ Pour déterminer la limite à l'infini d'une fonction polynôme réelle de la va
             </div>
             <div class="row">
                 <div class="col-md-8" id="exercice">
-                    <p>2x -4 = 8</p>
-                    <p>2x = 12</p>
                 </div>
                 <div class="col-md-4" id="outils">
                     <input id="aAjouter" type="ligne-ex" placeholder="Ajouter la suite de l'exercice ici">
@@ -76,8 +76,19 @@ Pour déterminer la limite à l'infini d'une fonction polynôme réelle de la va
                     <div class="indice">
                         <p>1. Passer les x d'un côté et les y de l'autre</p>
                     </div>
-                    <button>Ajouter une image de l'exercice</button>
-                    <button>Ajouter une image du corrigé</button>
+                    <span class="btn btn-success fileinput-button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Ajouter une image de l'exercice</span>
+                    <input type="file" name="files[]" multiple="">
+                    </span>
+                    <span class="btn btn-success fileinput-button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Ajouter une image du corrigé</span>
+                    <input type="file" name="files[]" multiple="">
+                    </span>
+                    <div id="button">
+                        <button>Soumettre l'exercice</button>
+                    </div>
                 </div>
             </div>
         </div>
